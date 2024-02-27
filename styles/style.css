@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --Rojo-Principal: #b91818; 
+    --Vino: #7f191a;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-menu {
+    height: 15%;
+    background: var(--Vino);
+}
+
+.menu-sidebar {
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container-principal {
+    height: 85%;
+    width: 940px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px 0;
+}
+
+.logo-principal {
+    width: 500px;
+}
+
+.descrip {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container-principal  div ul {
+    padding: 0;
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+.social-networks {
+    width: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.social-networks:hover {
+    transform: scale(1.2);
+}
