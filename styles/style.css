@@ -74,7 +74,7 @@ header {
 /* Acá inician los estilos del main */
 main {
     width: 100%;
-    height: 300vh;
+    height: 327vh;
     display: flex;
     flex-direction: column;
 }
