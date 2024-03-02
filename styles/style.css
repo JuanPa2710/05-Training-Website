@@ -380,6 +380,7 @@ footer p:first-child {
     .phrase {
         text-align: center;
         font-size: 16px;
+        margin: 16px;
     }
 
     .container-testimonies {
