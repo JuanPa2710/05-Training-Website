@@ -318,6 +318,7 @@ footer p:first-child {
     /* SC-1 */
     #sc-1 {
         height: auto;
+        padding: 42px 0;
     }
 
     .title {
@@ -351,6 +352,7 @@ footer p:first-child {
     /* SC-2 */
     #sc-2 {
         height: auto;
+        padding: 42px 0;
     }
 
     #sc-2 > div {
@@ -386,7 +388,7 @@ footer p:first-child {
     }
 
     .container-testimonies > ul li  {
-        margin-bottom: 0;        
+        margin-bottom: 34px;        
     }
 
     .container-testimonies ul li > ul {
