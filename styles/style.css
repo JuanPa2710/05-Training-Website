@@ -8,6 +8,12 @@ body {
     --Vino: #7f191a;
 }
 
+@font-face {
+    font-family: Sports World;
+    src: url('/fonts/Sports\ World-Regular.ttf');
+}
+
+/* Aquí empiezan los estilos del header */
 header {
     width: 100%;
     height: 100vh;
@@ -63,3 +69,352 @@ header {
 .social-networks:hover {
     transform: scale(1.2);
 }
+/* Acá terminan los estilos del header */
+
+/* Acá inician los estilos del main */
+main {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#sc-1 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Vino);
+}
+
+.title {
+    font-family: Sports World;
+    color: white;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.box-info {
+    width: 650px;
+    height: 334px;
+    display: flex;
+    margin: 20px
+}
+
+.box-info > div {
+    width: 170px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    background: white;
+    color: var(--Rojo-Principal);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-info > iframe {
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+#video {
+    width: 560px;
+    height: 315px;
+}
+
+.sub-title {
+    font-family: Sports World;    
+    font-weight: bold;
+    color: white;
+    font-size: 32px;
+    margin: 10px;
+}
+
+.container-addons {
+    width: 940px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-addons > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    gap: 150px;
+    color: white;
+}
+
+.container-addons > ul li ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-addons > ul li ul li {
+    padding: 10px;
+}
+
+.addons {
+    display: flex;
+    gap: 10px;
+}
+
+
+#sc-2 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: black;
+}
+
+#sc-2 > div {
+    width: 940px;
+    height: 100%;
+    display: flex;    
+    align-items: start;
+    gap: 20px;
+    padding-top: 44px
+}
+
+.photo-coach {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 0px 0px white, -12px -12px 0 0 var(--Vino);
+    margin-right: 20px;
+}
+
+#sc-2 > div p {
+    color: white;
+    text-align: justify;
+    padding-top: 74px;
+}
+
+#sc-3 {
+    width: 100%;
+    height: 127vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.custom {    
+    color: var(--Rojo-Principal)
+}
+
+.phrase {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container-testimonies {
+    width: 940px;
+    height: 80%;
+}
+
+.container-testimonies > ul {
+    list-style: none;
+    display: flex;    
+    flex-direction: column;
+    padding: 0;
+}
+
+.container-testimonies > ul > li {
+    margin-bottom: 100px;
+}
+
+.container-testimonies ul li > ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.image-testimonie {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    border: 5px solid var(--Rojo-Principal)
+}
+/* Acá terminan los estilos del main */
+
+/* Acá inicia el footer */
+footer {
+    width: 100%;
+    height: 20vh;
+    margin-top: 40px;
+    background-color: var(--Vino);   
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+footer p:first-child {
+    padding: 40px 0 0 0;
+}
+/* Acá termina el footer */
+
+
+/* Inicio de los medias queries */
+
+/* -- Media queries moviles - Orientación vertical --*/
+@media (max-width: 575px) and (orientation:portrait) {
+
+    /* Encabezado */
+    header {
+        height: 100vh;
+    }
+
+    .container-menu {
+        height: 12%;
+    }
+
+    .menu-sidebar {
+        margin: 0.6em 0 0 8px;
+    }
+
+    .container-principal {
+        width: auto;
+    }
+
+    .logo-principal {
+        width: 18em;
+        margin: 0 auto;
+    }
+
+    .descrip {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .social-networks {
+        width: 30px;
+        gap: 30px
+    }
+    /* Encabezado */
+    
+
+    /* Main */
+
+    main {
+        height: auto;
+    }
+
+    /* SC-1 */
+    #sc-1 {
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+        margin: 18px 8px;
+        text-align: center;
+    }
+
+    .box-info {
+        width: auto;
+        left: 20px;
+    }
+
+    .box-info > div {
+        left: 14px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    } 
+
+    #video, .container-addons {
+        width: auto;
+    }
+
+    .container-addons > ul {
+        gap: 0;
+    }    
+    /* SC-1 */
+
+    /* SC-2 */
+    #sc-2 {
+        height: auto;
+    }
+
+    #sc-2 > div {
+        width: auto;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .photo-coach {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    #sc-2 > div p {
+        padding: 0;
+        margin: 14px 16px 24px 16px;
+    }
+    /* SC-2 */
+
+    /* SC-3 */
+    #sc-3 {
+        height: auto;
+    }
+
+    .phrase {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .container-testimonies {
+        width: auto;
+        height: auto;
+    }
+
+    .container-testimonies > ul li  {
+        margin-bottom: 0;        
+    }
+
+    .container-testimonies ul li > ul {
+        flex-direction: column;
+    }
+
+    .container-testimonies ul li > ul li {
+        text-align: center;
+        padding-bottom: 34px;
+    }
+
+    .container-testimonies ul li > ul li:last-child {
+        padding-bottom: 0;
+    }
+
+    .image-testimonie {
+        width: 80%;
+        height: 10%;
+    }
+    /* SC-3 */
+
+    /* Main */
+
+    /* Footer */
+    footer {
+        margin-top: 10px;
+    }
+    /* Footer */
+ }
+
+/* ---------------------------- */

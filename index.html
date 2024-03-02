@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -8,9 +9,12 @@
     <!-- Tipografía Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <title>05 Training</title>
+
+    <script src="scripts/autoplay-video.js"></script>
 </head>
 
 <body>
@@ -29,10 +33,14 @@
 
             <div>
                 <ul>
-                    <li><a href="#"><img class="social-networks" src="images/icono-whatsapp.png" alt="Link a WhatsApp"></a></li>
-                    <li><a href="#"><img class="social-networks" src="images/icono-tik-tok.png" alt="Link a WhatsApp"></a></li>
-                    <li><a href="#"><img class="social-networks" src="images/icono-youtube.png" alt="Link a WhatsApp"></a></li>
-                    <li><a href="#"><img class="social-networks" src="images/icono-instagram.png" alt="Link a WhatsApp"></a></li>
+                    <li><a href="#"><img class="social-networks" src="images/icono-whatsapp.png"
+                                alt="Link a WhatsApp"></a></li>
+                    <li><a href="#"><img class="social-networks" src="images/icono-tik-tok.png"
+                                alt="Link a WhatsApp"></a></li>
+                    <li><a href="#"><img class="social-networks" src="images/icono-youtube.png"
+                                alt="Link a WhatsApp"></a></li>
+                    <li><a href="#"><img class="social-networks" src="images/icono-instagram.png"
+                                alt="Link a WhatsApp"></a></li>
                 </ul>
             </div>
         </section>
@@ -48,19 +56,50 @@
             <div class="box-info">
                 <div>Más información</div>
 
-                <iframe>
-
-                </iframe>
+                <iframe id="video" 
+                    src="https://www.youtube.com/embed/wBNYccFR2MM?si=CUdD3fWNRKXRj2hE&autoplay=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
 
-            <h2 class="subtitle">¿Qué incluyen?</h2>
+            <h2 class="sub-title">¿Qué incluyen?</h2>
 
             <div class="container-addons">
                 <ul>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
-                    <li><img></li>
+                    <li>
+                        <ul class="c1">
+                            <li>
+                                <div class="addons">
+                                    <img src="images/selector-telefono.svg">
+                                    <p>App de entrenamientos</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="addons">
+                                    <img src="images/selector-whatsapp.svg">
+                                    <p>FeedBack y acompañamiento</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul class="c2">
+                            <li>
+                                <div class="addons">
+                                    <img src="images/selector-pesa.svg">
+                                    <p>Programa personalizado</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="addons">
+                                    <img src="images/selector-libros.svg">
+                                    <p>Guía de hábito y alimentación</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -69,30 +108,45 @@
             <h1 class="title">Sobre mi</h1>
 
             <div>
-                <img src="" alt="">
+                <img class="photo-coach" src="images/foto-entrenador.png" alt="Coach Sebastian Sarmientos">
 
-                <p>Texto acerca de</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </section>
 
         <section id="sc-3">
-            <h1 class="title">Testimonios</h1>
+            <h1 class="title custom">Testimonios</h1>
 
-            <p>Frase de motivación</p>
+            <p class="phrase">"Tu unica competencia, es la persona que ves frente al espejo"</p>
 
-            <div clas="container-testimonies">
+            <div class="container-testimonies">
                 <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
+                    <li>
+                        <ul>
+                            <li><img class="image-testimonie" src="images/testimonies/1.jpg" alt="Testimonio de cliente de 05 Training"></li>
+                            <li><img class="image-testimonie" src="images/testimonies/2.jpg" alt="Testimonio de cliente de 05 Training"></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><img class="image-testimonie" src="images/testimonies/3.jpg" alt="Testimonio de cliente de 05 Training"></li>
+                            <li><img class="image-testimonie" src="images/testimonies/4.jpg" alt="Testimonio de cliente de 05 Training"></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <p>© Copyright 2024 </p>
+        <p>05 Training - All Rights Reserved</p>
     </footer>
 </body>
+
 </html>
