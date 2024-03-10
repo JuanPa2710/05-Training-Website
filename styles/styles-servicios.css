@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --Rojo-Principal: #b91818; 
+    --Vino: #7f191a;
+}
+
+@font-face {
+    font-family: Sports World;
+    src: url('/fonts/Sports\ World-Regular.ttf');
+}
+
+/* Acá inicia el header */
+header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: Sports World;
+    color: var(--Rojo-Principal);
+    font-weight: bold;
+    font-size: 44px;
+    margin: 36px 16px;
+    padding-top: 24px;
+}
+
+.menu-desplegable {
+    width: 370px;
+    height: 35%;
+    background-color: var(--Vino);
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 6px black;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;      
+    z-index: 1;   
+}
+
+.lista-menu {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.opciones-menu {
+    margin: 40px 12px
+}
+
+.opciones-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+.container-menu {
+    height: 106px;
+    background: var(--Vino);
+}
+
+.menu-sidebar {
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container-principal {
+    height: 85%;
+    width: 940px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+    margin: 10px 0;
+}
+/* Acá termina el header */
+
+/* Acá empieza el main */
+.sc-01, .sc-02, .sc-03 {
+    width: 940px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-title {
+    font-family: Sports World;    
+    font-weight: bold;
+    color: var(--Rojo-Principal);
+    font-size: 32px;
+    margin: 10px;
+}
+
+.text-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-paragrahp {
+    font-size: 16px;
+    text-align: center;
+    margin: 16px 20px;
+}
+
+.box-info {
+    width: 650px;
+    height: 334px;
+    display: flex;
+    margin: 20px;
+    position: relative;
+}
+
+.box-info > div {
+    width: auto;    
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0 14px;
+    border: 1px solid var(--Rojo-Principal);
+    border-radius: 20px;
+    background: var(--Rojo-Principal);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box-info > iframe {
+    margin: 0 auto;
+    align-self: flex-end;
+}
+
+#video {
+    width: 560px;
+    height: 315px;
+}
+/* Acá termina el main */
+
+
+/* Acá inicia el footer */
+footer {
+    width: 100%;
+    height: 20vh;
+    margin-top: 40px;
+    background-color: var(--Vino);   
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+footer p:first-child {
+    padding: 40px 0 0 0;
+}
+/* Acá termina el footer */
+
+/* -- Media queries moviles - Orientación vertical --*/
+@media (max-width: 433px) and (orientation:portrait) {
+
+    /* Encabezado */
+    header {
+        height: 32vh;
+    }
+
+    .title {
+        font-size: 24px;
+        margin: 18px 8px;
+        text-align: center;
+    }
+
+    .menu-sidebar {
+        margin: 0.6em 0 0 8px;
+    }
+
+    .menu-desplegable {
+        top: 72px;
+        width: 92%;
+        height: 42%;
+        max-width: 92%;
+    }
+
+    .container-principal {
+        width: auto;
+    }
+    /* Encabezado */
+
+    /* Main */
+    main {
+        width: auto;
+    }
+
+    .container-menu {
+        height: 80px;
+    }
+    .sc-01, .sc-02, .sc-03, #video, .box-info  {
+        width: auto;
+        height: auto;
+        max-height: 667px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .box-info > div {
+        top: -16px;
+        left: -12px;
+    }
+    /* Main */
+}
