@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --Rojo-Principal: #b91818; 
+    --Vino: #7f191a;
+}
+
+@font-face {
+    font-family: Sports World;
+    src: url('/fonts/Sports\ World-Regular.ttf');
+}
+
+/* Acá inicia el header */
+header {
+    width: 100%;
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.title {
+    font-family: Sports World;
+    color: var(--Rojo-Principal);
+    font-weight: bold;
+    font-size: 44px;
+    margin: 8px 16px;
+    padding-top: 24px;
+}
+
+.menu-desplegable {
+    width: 370px;
+    height: 35%;
+    background-color: var(--Vino);
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 3px 6px black;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    opacity: 0;
+    visibility: hidden;      
+    z-index: 1;   
+}
+
+.lista-menu {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.opciones-menu {
+    margin: 40px 12px
+}
+
+.opciones-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+.container-menu {
+    height: 106px;
+    background: var(--Vino);
+}
+
+.menu-sidebar {
+    width: 60px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.container-principal {
+    height: 52%;
+    width: 940px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 10px 0;
+}
+
+.container-principal p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* Acá termina el header */
+
+/* Acá inicia el main */
+main {
+    height: 49vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-testimonies {
+    width: 940px;
+    height: 100%;
+    margin: 28px 20px;
+    overflow: hidden; 
+}
+
+.button-left {
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+}
+
+.button-right {
+    width: 40px;
+    height: 40px;
+}
+
+.button-left:hover, .button-right:hover{
+    cursor: pointer;
+}
+
+.carrusel {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 100%);
+    grid-template-rows: 1fr;
+    transition: all 0.5s ease;
+    align-items: center;
+}
+
+.container-testimonies section {
+    width: 100%;
+    height: 81%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;    
+}
+
+.testimonies-img {
+    width: 100%;
+    margin: 0 12px;
+}
+
+.comentaries {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentaries img {
+    width: 54%;
+    padding-top: 14px;
+}
+
+.comentaries p {
+    padding: 0 32px;
+    text-align: justify;
+}
+/* Acá finaliza el main */
+
+/* Acá inicia el footer */
+footer {
+    width: 100%;
+    height: 16vh;
+    margin-top: 40px;
+    background-color: var(--Vino);   
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+footer p:first-child {
+    padding: 40px 0 0 0;
+}
+/* Acá termina el footer */
+
+/* -- Media queries moviles - Orientación vertical --*/
+@media (max-width: 433px) and (orientation:portrait) {
+
+    /* Encabezado */
+    header {
+        height: 32vh;
+    }
+
+    .title {
+        font-size: 24px;
+        margin: 18px 8px;
+        text-align: center;
+    }
+
+    .menu-sidebar {
+        margin: 0.6em 0 0 8px;
+    }
+
+    .menu-desplegable {
+        top: 72px;
+        width: 92%;
+        height: 42%;
+        max-width: 92%;
+    }
+
+    .container-principal {
+        width: auto;
+    }
+
+    .container-principal p {
+        font-size: 16px;
+        text-align: center;
+        margin: 0 24px;
+    }
+    /* Encabezado */
+
+    /* Main */
+    main {
+        height: auto;
+        margin: 0 12px;
+    }
+
+    .container-testimonies section {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;    
+        gap: 24px;
+    }
+
+    .testimonies-img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .comentaries {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    /* Main */
+}
