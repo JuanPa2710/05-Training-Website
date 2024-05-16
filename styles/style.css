@@ -152,6 +152,11 @@ main {
     cursor: pointer;
 }
 
+.box-info a {
+    text-decoration: none;
+    color: var(--Vino)
+}
+
 .box-info > iframe {
     margin: 0 auto;
     align-self: flex-end;
@@ -218,6 +223,12 @@ main {
     align-items: start;
     gap: 20px;
     padding-top: 44px
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo-coach {

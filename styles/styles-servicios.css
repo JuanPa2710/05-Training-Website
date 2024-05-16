@@ -6,6 +6,7 @@ body {
 :root {
     --Rojo-Principal: #b91818; 
     --Vino: #7f191a;
+    --White: #FFFFFF;
 }
 
 @font-face {
@@ -137,6 +138,11 @@ header {
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.box-info a {
+    text-decoration: none;
+    color: var(--White)
 }
 
 .box-info > iframe {
