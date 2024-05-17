@@ -111,7 +111,7 @@ header {
 
 .text-paragrahp {
     font-size: 16px;
-    text-align: center;
+    text-align: justify;
     margin: 16px 20px;
 }
 
@@ -232,7 +232,7 @@ footer p:first-child {
     .sc-01, .sc-02, .sc-03, .box-info  {
         width: auto;
         height: auto;
-        max-height: 667px;
+        max-height: 774px;
         max-width: 443px;
     }
 
