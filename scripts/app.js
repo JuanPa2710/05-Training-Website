@@ -38,3 +38,9 @@ function moverDerecha() {
         carrusel.style.transform = "translateX("+posicion+"%)";        
     }
 }
+
+const videos = document.querySelectorAll("video[loading='lazy']");
+
+videos.forEach(video => {
+    video.load();
+});
