@@ -89,8 +89,8 @@ header {
 /* Acá empieza el main */
 .sc-01, .sc-02, .sc-03 {
     width: 940px;
-    height: 100vh;
-    margin: 0 auto;
+    height: auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,6 +169,35 @@ header {
     height: 400px;
     align-self: center;
 }
+
+.container-addons {
+    width: 940px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-addons > ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 10px;
+    gap: 150px;
+    color: black;
+}
+
+.container-addons > ul li ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container-addons > ul li ul li {
+    padding: 10px;
+}
+
+.addons {
+    display: flex;
+    gap: 10px;
+}
 /* Acá termina el main */
 
 
@@ -232,7 +261,7 @@ footer p:first-child {
     .sc-01, .sc-02, .sc-03, .box-info  {
         width: auto;
         height: auto;
-        max-height: 774px;
+        max-height: 956px;
         max-width: 443px;
     }
 
@@ -254,5 +283,14 @@ footer p:first-child {
         width: 330px;
         height: 230px;
     }
+
+    .container-addons {
+        width: auto;
+        padding: 0 36px;
+    }
+
+    .container-addons > ul {
+        gap: 0;
+    } 
     /* Main */
 }
