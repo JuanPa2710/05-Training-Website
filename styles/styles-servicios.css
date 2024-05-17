@@ -246,13 +246,13 @@ footer p:first-child {
     }
 
     #video-banner {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     #video {
-        width: 300px;
-        height: 200px;
+        width: 330px;
+        height: 230px;
     }
     /* Main */
 }
