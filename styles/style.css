@@ -227,21 +227,14 @@ main {
     height: 100%;
     display: flex;    
     align-items: start;
+    justify-content: center;
     gap: 20px;
     padding-top: 44px
 }
 
-.about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-coach {
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 12px 12px 0px 0px white, -12px -12px 0 0 var(--Vino);
-    margin-right: 20px;
+#video-aboutme {
+    height: 60%;
+    width: 60%;
 }
 
 #sc-2 > div p {
@@ -393,7 +386,7 @@ footer p:first-child {
     }
 
     .box-info > img {
-        height: 250px;
+        height: 300px;
     }
     
 
@@ -417,9 +410,18 @@ footer p:first-child {
     }
 
     #sc-2 > div {
-        width: auto;
+        width: 80%;
+        height: 200px;
         flex-direction: column;
         padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #video-aboutme {
+        height: 99%;
+        width: 60%;
+    
     }
 
     .photo-coach {
