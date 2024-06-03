@@ -395,6 +395,11 @@ footer p:first-child {
         font-size: 20px;
     } 
 
+    #video-aboutme {
+        height: 100%;
+        width: 100%;
+    }
+
     #video, .container-addons {
         width: auto;
     }
@@ -417,12 +422,6 @@ footer p:first-child {
         padding: 0;
         display: flex;
         align-items: center;
-    }
-
-    #video-aboutme {
-        height: 99%;
-        width: 60%;
-    
     }
 
     .photo-coach {
