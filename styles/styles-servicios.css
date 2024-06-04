@@ -117,8 +117,9 @@ header {
 
 .box-info {
     width: 650px;
-    height: 334px;
+    height: auto;
     display: flex;
+    flex-direction: column;
     margin: 20px;
     position: relative;
 }
@@ -130,14 +131,14 @@ header {
     flex-direction: column;
 }
 
-.box-info > div {
+.box-info div:first-child {
     width: auto;    
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    left: 54px;
+    left: 120px;
     padding: 0 14px;
     border: 1px solid var(--Rojo-Principal);
     border-radius: 20px;
@@ -153,21 +154,14 @@ header {
     color: var(--White)
 }
 
-.box-info > iframe {
-    margin: 0 auto;
-    align-self: flex-end;
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#video {
-    width: 560px;
-    height: 315px;
-    margin: auto;
-}
-
-#video-banner {
-    width: 400px;
-    height: 400px;
-    align-self: center;
+.img-container img {
+    width: 250px;
 }
 
 .container-addons {
